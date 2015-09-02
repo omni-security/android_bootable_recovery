@@ -76,6 +76,7 @@ LOCAL_CFLAGS += -DRECOVERY_API_VERSION=$(RECOVERY_API_VERSION)
 #    liblog \
 #    libselinux \
 #    libstdc++ \
+#    libutils \
 #    libm \
 #    libc
 
