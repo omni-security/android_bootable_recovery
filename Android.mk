@@ -398,9 +398,9 @@ endif
 ifneq ($(TW_CLOCK_OFFSET),)
 	LOCAL_CFLAGS += -DTW_CLOCK_OFFSET=$(TW_CLOCK_OFFSET)
 endif
-ifeq ($(TW_EXCLUDE_TWRPAPP),true)
-    LOCAL_CFLAGS += -DTW_EXCLUDE_TWRPAPP
-endif
+
+# exclude TWRP App by default
+LOCAL_CFLAGS += -DTW_EXCLUDE_TWRPAPP
 
 LOCAL_REQUIRED_MODULES += \
     dump_image \
